@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Settings - Attendance System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>AttendTrack</h2>
+
+            <p>School Attendance</p>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Dashboard</a>
+            <a href="classes.html">Classes</a>
+            <a href="students.html">Students</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="reports.html">Reports</a>
+            <a href="settings.html" class="active">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Settings</h1>
+
+                <p>
+                    Customize your attendance system
+                </p>
+
+            </div>
+
+        </header>
+
+        <section class="section">
+
+            <div class="section-header">
+
+                <h2>School Information</h2>
+
+            </div>
+
+            <form id="settingsForm" class="form">
+
+                <div class="form-group">
+
+                    <label>School Name</label>
+
+                    <input
+                        type="text"
+                        id="schoolName"
+                        placeholder="School name"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Academic Session</label>
+
+                    <input
+                        type="text"
+                        id="academicSession"
+                        placeholder="2026/2027"
+                    >
+
+                </div>
+
+                <button class="btn" type="submit">
+                    Save Settings
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

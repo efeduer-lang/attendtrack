@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Students - Attendance System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>AttendTrack</h2>
+            <p>School Attendance</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="classes.html">Classes</a>
+            <a href="students.html" class="active">Students</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="reports.html">Reports</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Students</h1>
+                <p>Register and manage students</p>
+            </div>
+
+        </header>
+
+        <section class="section">
+
+            <div class="section-header">
+                <h2>Add Student</h2>
+            </div>
+
+            <form id="studentForm" class="form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Student Name</label>
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            placeholder="Full name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Student ID</label>
+
+                        <input
+                            type="text"
+                            id="studentId"
+                            placeholder="e.g. STU001"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Class</label>
+
+                        <select id="studentClass" required>
+                            <option value="">Select class</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Gender</label>
+
+                        <select id="studentGender">
+
+                            <option value="">Select gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn">
+                    Add Student
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="section">
+
+            <div class="section-header">
+
+                <h2>Student List</h2>
+
+                <input
+                    type="text"
+                    id="studentSearch"
+                    class="search"
+                    placeholder="Search student..."
+                >
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Class</th>
+                            <th>Gender</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="studentsTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

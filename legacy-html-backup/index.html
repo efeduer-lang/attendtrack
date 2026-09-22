@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>AttendTrack</h2>
+            <p>School Attendance</p>
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="classes.html">Classes</a>
+            <a href="students.html">Students</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="reports.html">Reports</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome back, Teacher</p>
+            </div>
+
+            <div class="profile">
+                <span>👤</span>
+                <strong>Teacher</strong>
+            </div>
+        </header>
+
+        <!-- Statistics -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div>
+                    <p>Total Students</p>
+                    <h2 id="totalStudents">0</h2>
+                </div>
+                <span class="stat-icon">👨‍🎓</span>
+            </div>
+
+            <div class="stat-card">
+                <div>
+                    <p>Total Classes</p>
+                    <h2 id="totalClasses">0</h2>
+                </div>
+                <span class="stat-icon">🏫</span>
+            </div>
+
+            <div class="stat-card">
+                <div>
+                    <p>Present Today</p>
+                    <h2 id="presentToday">0</h2>
+                </div>
+                <span class="stat-icon">✓</span>
+            </div>
+
+            <div class="stat-card">
+                <div>
+                    <p>Absent Today</p>
+                    <h2 id="absentToday">0</h2>
+                </div>
+                <span class="stat-icon">✕</span>
+            </div>
+
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Quick Actions</h2>
+            </div>
+
+            <div class="quick-actions">
+
+                <a href="attendance.html" class="action-card">
+                    <span>📝</span>
+                    <h3>Mark Attendance</h3>
+                    <p>Record today's attendance</p>
+                </a>
+
+                <a href="students.html" class="action-card">
+                    <span>👨‍🎓</span>
+                    <h3>Add Student</h3>
+                    <p>Register a new student</p>
+                </a>
+
+                <a href="classes.html" class="action-card">
+                    <span>🏫</span>
+                    <h3>Add Class</h3>
+                    <p>Create a new class</p>
+                </a>
+
+                <a href="reports.html" class="action-card">
+                    <span>📊</span>
+                    <h3>View Reports</h3>
+                    <p>Check attendance reports</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Class Attendance -->
+        <section class="section">
+
+            <div class="section-header">
+                <h2>Class Attendance</h2>
+                <a href="reports.html" class="view-link">View Reports</a>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Students</th>
+                            <th>Present</th>
+                            <th>Absent</th>
+                            <th>Attendance</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="classAttendanceTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
