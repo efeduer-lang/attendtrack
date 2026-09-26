@@ -46,7 +46,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-backend/
 venv/
 env/
 .venv/
